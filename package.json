@@ -19,8 +19,5 @@
   "homepage": "https://github.com/helloworld121/js-examples#readme",
   "dependencies": {
     "zone.js": "^0.11.3"
-  },
-  "devDependencies": {
-    "jasmine-node": "^3.0.0"
   }
 }
