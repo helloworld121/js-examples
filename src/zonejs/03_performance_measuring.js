@@ -20,6 +20,14 @@ const zoneA = Zone.current.fork({
 
         console.timeEnd(label);
     },
+    onInvoke: (parentZoneDelegate, currentZone, targetZone, delegate, applyThis, applyArgs, source) => {
+        console.log(`entering zone '${targetZone.name}'`);
+
+        const t0 = console.time('onInvoke');
+        const result = parentZoneDelegate.invoke(targetZone, delegate, applyArgs);
+        console.timeEnd('onInvoke');
+        return result;
+    }
 });
 
 zoneA.run(() => {
