@@ -18,3 +18,6 @@ Task-Lifecycle:
 Blogs
 * https://labs.thisdot.co/blog/zone-js-deep-diving-execution-context
 * https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/scope-closures
+
+Misc
+* https://github.com/gilbox/vizone
